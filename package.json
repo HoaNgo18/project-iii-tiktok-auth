@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp index.html privacy.html terms.html dist/ && mkdir -p dist/tiktok && cp tiktok/callback.html dist/tiktok/callback.html"
+    "build": "mkdir -p dist/tiktok && cp index.html privacy.html terms.html *.txt dist/ && cp tiktok/callback.html dist/tiktok/callback.html"
   }
 }
