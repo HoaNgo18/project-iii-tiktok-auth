@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TikTok OAuth Callback</title>
+  </head>
+  <body>
+    <h1>TikTok OAuth Callback</h1>
+    <p>Copy the authorization code from the URL and use it to generate access tokens.</p>
+    <pre id="output"></pre>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const data = {
+        code: params.get("code"),
+        state: params.get("state"),
+        error: params.get("error"),
+        error_description: params.get("error_description")
+      };
+      document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+    </script>
+  </body>
+</html>

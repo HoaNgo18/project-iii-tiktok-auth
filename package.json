@@ -1,0 +1,8 @@
+{
+  "name": "project-iii-tiktok-auth",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html privacy.html terms.html dist/ && mkdir -p dist/tiktok && cp tiktok/callback.html dist/tiktok/callback.html"
+  }
+}
