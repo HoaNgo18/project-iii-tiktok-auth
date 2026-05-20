@@ -2,3 +2,4 @@ node_modules/
 dist/
 .commandcode/
 *.txt
+!src/public/tiktok-verification.txt
