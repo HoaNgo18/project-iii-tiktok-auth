@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist dist/tiktok dist/privacy-policy dist/terms-of-service && cp src/index.html dist/ && cp -r src/css dist/ && cp -r src/js dist/ && cp -r src/assets dist/ && cp src/public/privacy.html dist/privacy-policy/index.html && cp src/public/terms.html dist/terms-of-service/index.html && cp src/public/tiktok-callback.html dist/tiktok/callback.html && cp src/public/tiktok-verification.txt dist/"
+    "build": "mkdir -p dist dist/tiktok dist/privacy-policy dist/terms-of-service && cp src/index.html dist/ && cp -r src/css dist/ && cp -r src/js dist/ && cp -r src/assets dist/ && cp src/public/privacy.html dist/privacy-policy/index.html && cp src/public/terms.html dist/terms-of-service/index.html && cp src/public/tiktok-callback.html dist/tiktok/callback.html && cp src/public/tiktokGUAO2d3zQnl6umq9MqkDEMlU1OEphOMb.txt dist/"
   }
 }
