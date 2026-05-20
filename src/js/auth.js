@@ -20,7 +20,7 @@
     var params = new URLSearchParams({
       client_key: TIKTOK_CONFIG.clientKey,
       response_type: 'code',
-      scope: 'user.info.basic,video.publish,video.upload',
+      scope: 'user.info.basic,video.upload',
       redirect_uri: TIKTOK_CONFIG.redirectUri,
       state: generateState()
     });

@@ -27,7 +27,7 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
+      { threshold: 0.1, rootMargin: '0px 0px -20px 0px' }
     );
 
     elements.forEach(function (el) {
@@ -35,35 +35,7 @@
     });
   }
 
-  /* ===== Magnetic button effect ===== */
-  function initMagneticButtons() {
-    var buttons = document.querySelectorAll('.btn-magnetic');
-    if (!buttons.length) return;
-
-    buttons.forEach(function (btn) {
-      function onMove(e) {
-        var rect = btn.getBoundingClientRect();
-        var x = e.clientX - rect.left - rect.width / 2;
-        var y = e.clientY - rect.top - rect.height / 2;
-        var strength = 0.3;
-        var maxMove = 8;
-
-        var moveX = Math.max(-maxMove, Math.min(maxMove, x * strength));
-        var moveY = Math.max(-maxMove, Math.min(maxMove, y * strength));
-
-        btn.style.transform = 'translate(' + moveX + 'px, ' + moveY + 'px)';
-      }
-
-      function onLeave() {
-        btn.style.transform = 'translate(0, 0)';
-      }
-
-      btn.addEventListener('mousemove', onMove);
-      btn.addEventListener('mouseleave', onLeave);
-    });
-  }
-
-  /* ===== Smooth scroll for all internal anchor links ===== */
+  /* ===== Smooth scroll for internal anchor links ===== */
   function initSmoothScroll() {
     document.addEventListener('click', function (e) {
       var link = e.target.closest('a[href^="#"]');
@@ -87,13 +59,11 @@
     document.addEventListener('DOMContentLoaded', function () {
       initHeroEntrance();
       initScrollReveal();
-      initMagneticButtons();
       initSmoothScroll();
     });
   } else {
     initHeroEntrance();
     initScrollReveal();
-    initMagneticButtons();
     initSmoothScroll();
   }
 })();
