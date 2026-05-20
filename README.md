@@ -5,7 +5,7 @@ Internal content workflow tool for account authorization, app verification, and 
 ## Project Structure
 
 ```
-PROJECT-III-TIKTOK-AUTH
+THREADS_CITY
 ├── src/
 │   ├── assets/
 │   │   ├── images/

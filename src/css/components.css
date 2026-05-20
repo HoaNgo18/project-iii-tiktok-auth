@@ -200,7 +200,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-md);
-  grid-auto-rows: 260px;
+  grid-auto-rows: minmax(260px, auto);
 }
 
 .feature-card {
