@@ -15,18 +15,36 @@
         --color-text-secondary: #525252;
         --color-text-muted: #737373;
         --color-accent: #0ea5e9;
+        --color-accent-hover: #0284c7;
+        --color-accent-subtle: #f0f9ff;
+        --color-accent-border: #bae6fd;
         --color-border: #e5e5e5;
         --color-border-light: #f0f0f0;
 
         --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         --max-width: 1120px;
         --content-width: 680px;
+        --radius: 8px;
         --spacing-xs: 0.5rem;
         --spacing-sm: 1rem;
         --spacing-md: 1.5rem;
         --spacing-lg: 2.5rem;
         --spacing-xl: 4rem;
         --spacing-2xl: 6rem;
+      }
+
+      [data-theme="dark"] {
+        --color-bg: #0f172a;
+        --color-bg-alt: #1e293b;
+        --color-text: #f1f5f9;
+        --color-text-secondary: #94a3b8;
+        --color-text-muted: #64748b;
+        --color-accent: #38bdf8;
+        --color-accent-hover: #7dd3fc;
+        --color-accent-subtle: #0c2d48;
+        --color-accent-border: #1e4976;
+        --color-border: #334155;
+        --color-border-light: #1e293b;
       }
 
       * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,6 +57,7 @@
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        transition: background 0.3s, color 0.3s;
       }
 
       nav {
@@ -52,11 +71,17 @@
       .nav-container {
         max-width: var(--max-width);
         margin: 0 auto;
-        padding: var(--spacing-sm) var(--spacing-md);
+        padding: 0 var(--spacing-md);
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-lg);
       }
 
       .logo {
@@ -66,7 +91,7 @@
       }
 
       .nav-links {
-        display: flex; gap: var(--spacing-lg); list-style: none;
+        display: flex; gap: var(--spacing-md); list-style: none;
       }
 
       .nav-links a {
@@ -75,6 +100,29 @@
       }
 
       .nav-links a:hover { color: var(--color-text); }
+
+      .theme-toggle {
+        background: none;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius);
+        width: 36px; height: 36px;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer;
+        color: var(--color-text-secondary);
+        transition: all 0.2s;
+        flex-shrink: 0;
+      }
+
+      .theme-toggle:hover {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+      }
+
+      .theme-icon { width: 16px; height: 16px; transition: opacity 0.2s; }
+      [data-theme="dark"] .theme-icon-sun { display: block; }
+      [data-theme="dark"] .theme-icon-moon { display: none; }
+      .theme-icon-sun { display: none; }
+      .theme-icon-moon { display: block; }
 
       .page-header {
         padding: calc(var(--spacing-2xl) + 64px) var(--spacing-md) var(--spacing-xl);
@@ -97,7 +145,7 @@
       .content h2 {
         font-size: 1.125rem; font-weight: 600;
         margin-top: var(--spacing-lg); margin-bottom: var(--spacing-sm);
-        color: var(--color-text);
+        color: var(--color-accent);
       }
 
       .content h2:first-child { margin-top: 0; }
@@ -119,7 +167,7 @@
         color: var(--color-accent); text-decoration: none; font-weight: 500;
       }
 
-      .content a:hover { text-decoration: underline; }
+      .content a:hover { text-decoration: underline; color: var(--color-accent-hover); }
 
       footer {
         background: var(--color-bg-alt);
@@ -162,12 +210,22 @@
   <body>
     <nav>
       <div class="nav-container">
-        <a href="/" class="logo">threads_city</a>
-        <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/privacy-policy/">Privacy Policy</a></li>
-          <li><a href="/terms-of-service/">Terms of Service</a></li>
-        </ul>
+        <div class="nav-left">
+          <a href="/" class="logo">threads_city</a>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-service/">Terms of Service</a></li>
+          </ul>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
       </div>
     </nav>
 
@@ -211,5 +269,23 @@
         <p class="copyright">&copy; 2025 threads_city. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        var stored = localStorage.getItem('threads_city_theme');
+        if (stored) {
+          document.documentElement.setAttribute('data-theme', stored);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+        document.querySelector('.theme-toggle').addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('threads_city_theme', next);
+        });
+      })();
+    </script>
   </body>
 </html>
