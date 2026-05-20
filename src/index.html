@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>threads_city — Content Workflow Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <div class="mesh-blobs">
+      <div class="mesh-blob"></div>
+      <div class="mesh-blob"></div>
+      <div class="mesh-blob"></div>
+    </div>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <a href="/" class="logo">threads_city</a>
+          <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <span class="hero-badge">Internal Content Workflow Tool</span>
+        <h1>threads_city</h1>
+        <p>Account authorization, app verification, and approved publishing automation — all in one internal workflow tool built for platforms that demand review-first content pipelines.</p>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary btn-magnetic">Learn More</a>
+          <a href="/privacy-policy/" class="btn btn-ghost">Privacy Policy</a>
+        </div>
+      </section>
+
+      <!-- Trusted By / Social Proof -->
+      <section class="trusted-by">
+        <div class="section-container">
+          <div class="logo-cloud reveal">
+            <span class="logo-cloud-item">
+              <svg class="logo-cloud-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              TikTok
+            </span>
+            <span class="logo-cloud-item">
+              <svg class="logo-cloud-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/></svg>
+              Meta
+            </span>
+            <span class="logo-cloud-item">
+              <svg class="logo-cloud-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+              YouTube
+            </span>
+            <span class="logo-cloud-item">
+              <svg class="logo-cloud-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+              YouTube Shorts
+            </span>
+            <span class="logo-cloud-item">
+              <svg class="logo-cloud-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
+              Twitter / X
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features — Bento Grid -->
+      <section class="features" id="features">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-tag">Key Features</span>
+            <h2>Built for review-first workflows</h2>
+            <p>Everything needed to support secure authorization, internal review, and controlled publishing automation across platforms.</p>
+          </div>
+          <div class="features-bento">
+            <article class="feature-card reveal">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3>Account Authorization</h3>
+              <p>OAuth-based account connection that securely links your publishing accounts. Tokens are managed internally with automatic refresh and scope validation for each integrated platform.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3>App Verification</h3>
+              <p>Required product pages and policy documents for platform review, including Privacy Policy and Terms of Service hosted on verified domains.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                </svg>
+              </div>
+              <h3>Manual Review First</h3>
+              <p>Every piece of content goes through human approval by the project owner before any publishing action is triggered. Nothing goes live without explicit sign-off.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <h3>Approved Publishing</h3>
+              <p>Once reviewed and approved, content is passed into the publishing workflow automatically — with scheduling, platform routing, and status tracking.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-tag">Process</span>
+            <h2>How It Works</h2>
+            <p>Internal setup and publishing flow in three clear steps</p>
+          </div>
+          <div class="steps">
+            <div class="step reveal">
+              <div class="step-number">1</div>
+              <h3>Connect</h3>
+              <p>Connect your publishing accounts through our secure OAuth authorization flow. Credentials are never stored — only scoped tokens.</p>
+            </div>
+            <div class="step reveal">
+              <div class="step-number">2</div>
+              <h3>Verify</h3>
+              <p>Provide required policy pages and app details for each platform's review process. We handle the verification documentation.</p>
+            </div>
+            <div class="step reveal">
+              <div class="step-number">3</div>
+              <h3>Approve</h3>
+              <p>Content is reviewed and manually approved before entering the publishing pipeline. Full control stays with the project owner.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-tag">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Common questions about how threads_city works</p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                <span>What is threads_city?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                threads_city is an internal content workflow tool that handles account authorization, app verification, and approved publishing automation for social media platforms.
+              </div>
+            </details>
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                <span>Which platforms are supported?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                We currently integrate with TikTok, Meta (Facebook &amp; Instagram), YouTube, YouTube Shorts, and Twitter / X. Additional platforms are added as platform APIs evolve.
+              </div>
+            </details>
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                <span>Is content published automatically?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                No. Every piece of content must be manually reviewed and approved by the project owner before it enters the publishing pipeline. Automation only kicks in after explicit approval.
+              </div>
+            </details>
+            <details class="faq-item reveal">
+              <summary class="faq-question">
+                <span>How are my account credentials handled?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="faq-answer">
+                We use OAuth 2.0 for all platform connections. Your credentials are never stored — only scoped access tokens are kept, and they can be revoked at any time through the connected platform.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="section-container reveal">
+          <span class="section-tag">Get Started</span>
+          <h2>Documentation &amp; Verification</h2>
+          <p>Use these pages to support review of the threads_city integration on your target platforms.</p>
+          <a href="/terms-of-service/" class="btn btn-white btn-magnetic">View Terms of Service</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer — 4 Columns -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">threads_city</a>
+          <p>Internal content workflow tool for account authorization, app verification, and approved publishing automation.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-service/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 threads_city. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
